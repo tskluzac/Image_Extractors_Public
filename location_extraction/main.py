@@ -15,21 +15,16 @@ from location_extraction import load_city_index, load_border_index, extract_loca
 
 
 def get_indices():
-    # Load city and border indices into memory.
+    """ Load the pre_built city and border indices into memory. """
     city_index = load_city_index()
     border_index = load_border_index()
 
     return (city_index, border_index)
 
 
-# # Load file from shared volume.
-# input_file = "fix_this.png"
-#
-# # Extract map-based metadata:
-# metadata = extract_location_metadata(input_file, border_index, city_index, path_given=True, debug=False)
 
-#Sample usage -- set debug == False to remove verbose text.
 def extract_map_metadata(filename):
+    """ Given a file previously assumed to be a map, output (return) all feature tags. """
 
     indices = get_indices()
     city_index = indices[0]
@@ -40,6 +35,7 @@ def extract_map_metadata(filename):
     return(metadata)
 
 
+# Run on file called 'testpic.png' (stored in repo).
 extract_map_metadata('testpic.png')
 
 

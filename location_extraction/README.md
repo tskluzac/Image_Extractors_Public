@@ -32,4 +32,4 @@ The hierarchy of modules is as follows:
         any available locations directly from text found in the map.
 
 
-Note: Contact Rohan Kumar for any clarifications needed
+Note: Contact Tyler Skluzacek or Rohan Kumar for any clarifications needed
